@@ -1,34 +1,37 @@
 <?php
 session_start();
 include __DIR__ . '/partials/header.php';
-include __DIR__ . '/partials/functions.php';
+include __DIR__ . '/functions/functions.php';
 
 $caratteri = [
     'alphabet' => 'qwertyuiopasdfghjklzxcvbnm',
     'numbers' => '1234567890',
     'symbols' => '\|!"£$%&/()=?^*.;,-_#@][><'
 ];
-function getCharacter($string): string
-{
-    $lunghezza = strlen($string) - 1;
-    $randomNumber = rand(0, $lunghezza);
-    return $string[$randomNumber];
-}
-;
+
 
 
 $password = '';
 if (isset($_GET['lunghezza']) && !empty($_GET['lunghezza'])) {
     $lunghezza = $_GET['lunghezza'];
+    $scrumble = $caratteri['alphabet'] . $caratteri['numbers'] . $caratteri['symbols'];
+    $scrumble = str_shuffle($scrumble);
     while (strlen($password) < $lunghezza) {
-        $password .= getCharacter($caratteri['alphabet']);
+        $password .= getRandom($scrumble);
     }
+    $password = str_shuffle($password);
+    $_SESSION['password'] = $password;
+    header('Location: ./receiver.php');
 }
 ;
 
 
 
-?>
+var_dump($password)
+
+
+
+    ?>
 
 
 
@@ -50,9 +53,9 @@ if (isset($_GET['lunghezza']) && !empty($_GET['lunghezza'])) {
             <button type="refer" class="btn btn-primary">annulla</button>
         </form>
 
-        <div>
-            <?php echo $password . strlen($password) ?>
-        </div>
+
+
+
 
 
     </main>
