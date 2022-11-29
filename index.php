@@ -43,7 +43,7 @@ if (isset($_GET['lunghezza']) && !empty($_GET['lunghezza'])) {
 
             <div class="mb-3 col-3 m-auto">
                 <label for="exampleInputPassword1" class="form-label titolo">Lunghezza Password</label>
-                <input type="number" class="form-control col-3" name="lunghezza">
+                <input type="number" class="form-control col-3 text-center" name="lunghezza">
             </div>
 
             <button type="submit" class="btn btn-primary text-uppercase">genera</button>
