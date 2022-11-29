@@ -27,30 +27,28 @@ if (isset($_GET['lunghezza']) && !empty($_GET['lunghezza'])) {
 
 
 
-var_dump($password)
 
 
 
-    ?>
+
+?>
 
 
 
 
 
 <body>
-    <main>
-        <form action="index.php" method="GET">
+    <main class="wrapper">
+        <form action="index.php" method="GET" class="container">
 
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Lunghezza</label>
-                <input type="number" class="form-control" name="lunghezza">
+            <div class="mb-3 col-3 m-auto">
+                <label for="exampleInputPassword1" class="form-label titolo">Lunghezza Password</label>
+                <input type="number" class="form-control col-3" name="lunghezza">
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">genera</button>
-            <button type="refer" class="btn btn-primary">annulla</button>
+
+            <button type="submit" class="btn btn-primary text-uppercase">genera</button>
+            <button type="refer" class="btn btn-warning text-uppercase
+            ">annulla</button>
         </form>
 
 

@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@100;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(104, 202, 148);
+
+    height: 100vh;
 }
 
 form {
@@ -7,8 +18,21 @@ form {
 }
 
 .wrapper {
-    background-color: white;
+
     text-align: center;
     padding: 5rem 0;
     border-radius: 20px;
+}
+
+.titolo {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 22px;
+}
+
+.risultato {
+
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20%;
 }
