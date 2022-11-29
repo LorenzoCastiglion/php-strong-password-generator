@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(104, 202, 148);
-
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -20,7 +20,7 @@ form {
 .wrapper {
 
     text-align: center;
-    padding: 5rem 0;
+    padding: 2rem;
     border-radius: 20px;
 }
 
@@ -38,10 +38,77 @@ form {
 }
 
 h3 {
+    margin-top: 40px;
     filter: blur(20px);
     transition: 0.5s;
+    position: relative;
+    z-index: 199;
 }
 
 h3:hover {
+
     filter: blur(0);
+
+}
+
+.shhh {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+.mano1 {
+    width: 50%;
+    position: absolute;
+    bottom: 20%;
+    right: -50px;
+    transform-origin: right center;
+    animation: grow 4s ease infinite;
+
+}
+
+@keyframes grow {
+
+
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+
+}
+
+.mano2 {
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: -150px;
+    z-index: 10;
+    animation: point 2s ease-in-out infinite;
+
+}
+
+
+@keyframes point {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }

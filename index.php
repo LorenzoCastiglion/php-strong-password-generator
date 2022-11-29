@@ -25,25 +25,17 @@ if (isset($_GET['lunghezza']) && !empty($_GET['lunghezza'])) {
 }
 ;
 
-
-
-
-
-
-
 ?>
-
-
-
-
 
 <body>
     <main class="wrapper">
         <form action="index.php" method="GET" class="container">
 
             <div class="mb-3 col-3 m-auto">
-                <label for="exampleInputPassword1" class="form-label titolo">Lunghezza Password</label>
-                <input type="number" class="form-control col-3 text-center" name="lunghezza">
+                <label for="exampleInputPassword1" class="form-label titolo">Lunghezza
+                    Password</label>
+                <input type="number" class="form-control col-3 text-center" name="lunghezza"
+                    placeholder="Choose a number">
             </div>
 
             <button type="submit" class="btn btn-primary text-uppercase">genera</button>
