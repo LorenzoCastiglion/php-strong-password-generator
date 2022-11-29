@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(104, 202, 148);
+    background-color: rgb(159, 220, 187);
     overflow: hidden;
     height: 100vh;
 }
@@ -61,10 +61,10 @@ img {
 }
 
 .mano1 {
-    width: 50%;
+    width: 60%;
     position: absolute;
     bottom: 20%;
-    right: -50px;
+    right: -80px;
     transform-origin: right center;
     animation: grow 4s ease infinite;
 
