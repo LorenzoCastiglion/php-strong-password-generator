@@ -36,3 +36,12 @@ form {
     margin: 0 auto;
     margin-top: 20%;
 }
+
+h3 {
+    filter: blur(20px);
+    transition: 0.5s;
+}
+
+h3:hover {
+    filter: blur(0);
+}

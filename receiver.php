@@ -14,7 +14,7 @@ $printPass = $_SESSION['password'];
 
         <div class="wrapper titolo risultato">
             <p class="text-danger">La tua passwor è:</p>
-            <?php echo $printPass ?>
+            <h3><?php echo $printPass ?></h3>
         </div>
 
 
