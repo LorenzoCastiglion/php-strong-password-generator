@@ -66,7 +66,7 @@ img {
     bottom: 20%;
     right: -80px;
     transform-origin: right center;
-    animation: grow 4s ease infinite;
+    animation: grow 6s linear infinite;
 
 }
 
